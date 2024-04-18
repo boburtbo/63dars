@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="./assets/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>React App</title>
+  </head>
+
+  <body class="light-mode">
+    <div class="toggle-container">
+      <label class="toggle-label">Dark Mode</label>
+      <label class="toggle-input">
+        <input type="checkbox" onclick="toggleDarkMode()" />
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      function toggleDarkMode() {
+        const body = document.querySelector("body");
+        body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>

@@ -74,7 +74,11 @@ function App() {
       <ul className="products-grid">
         {products.map((product) => (
           <li key={product.id}>
-            <img src={product.thumbnail} alt="" width={400} height={200} />
+            <figure className="snip1577">
+              <h3>market</h3>
+              <img src={product.thumbnail} alt="" width={400} height={200} />
+            </figure>
+
             <div className="card-body">
               <h3>{product.title}</h3>
               <p>
